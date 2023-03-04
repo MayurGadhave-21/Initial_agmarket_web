@@ -1,0 +1,57 @@
+﻿/* popup_box DIV-Styles*/
+#popup_box { 
+	display:none; /* Hide the DIV */
+	position:fixed;  
+	_position:absolute; /* hack for internet explorer 6 */  
+	height:Auto;  
+	width:900px;  
+	background:#FFFFFF;  
+	left: 30px;
+	top: 40px;
+	z-index:999; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+	margin-left: 15px;  
+	
+	/* additional features, can be omitted */
+	border:2px solid #ff0000;  	
+	padding:15px;  
+	font-size:15px;  
+	-moz-box-shadow: 0 0 5px #ff0000;
+	-webkit-box-shadow: 0 0 5px #ff0000;
+	box-shadow: 0 0 5px #ff0000;
+	
+}
+
+  .Heading
+  {
+	border-bottom:1px solid Red ;
+	padding-bottom:7px;
+	margin-bottom:7px;
+	font-variant:small-caps;
+	}
+
+/* #container {
+	background: #d2d2d2; 
+	width:100%;
+	height:100%;
+}  
+
+*/
+
+a{  
+cursor: pointer;  
+/*text-decoration:none;*/  
+color:black;
+font-size:12px;
+line-height:22px;
+} 
+
+/* This is for the positioning of the Close Link */
+#popupBoxClose {
+	font-size:15px;  
+	line-height:15px;  
+	left:50px;  
+	top:5px;  
+	position:absolute;  
+	color:#6fa5e2;  
+	font-weight:00;  	
+}

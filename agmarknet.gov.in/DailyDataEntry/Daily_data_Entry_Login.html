@@ -1,0 +1,716 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+   <html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from agmarknet.gov.in/DailyDataEntry/Daily_data_Entry_Login.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Mar 2023 14:52:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><title>
+	Login
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><link href="Styles/Site.css" rel="stylesheet" type="text/css" /><link href="Styles/popup.css" rel="stylesheet" type="text/css" />
+      <script src="js/jquery.min.js" type="text/javascript"> </script>
+
+     <script type="text/javascript">
+
+         $(document).ready(function () {
+
+             // When site loaded, load the Popupbox First
+             loadPopupBox();
+
+             $('#popupBoxClose').click(function () {
+                 unloadPopupBox();
+             });
+
+             $('#container').click(function () {
+                 unloadPopupBox();
+             });
+
+             function unloadPopupBox() {	// TO Unload the Popupbox
+                 $('#popup_box').fadeOut("slow");
+                 $("#container").css({ // this is just for style		
+                     "opacity": "1"
+                 });
+             }
+
+             function loadPopupBox() {	// To Load the Popupbox
+                 $('#popup_box').fadeIn("slow");
+                 $("#container").css({ // this is just for style
+                     "opacity": "0.3"
+                 });
+             }
+             /**********************************************************/
+
+         });
+     </script>
+
+    <style type="text/css">
+     
+   .logCaptchaImg {
+    float: left;
+     width: 66px;
+      }  
+        
+  .modalTextBoxBackground
+{
+   background-color:Gray;
+   filter:alpha(opacity=70);
+
+}  
+.modalTextBox
+{
+    border: 1px solid #FFFFFF;
+    /*background-color:#F2F8DD;*/
+    background-color:#E9DFDA;
+    
+    font-weight:normal;
+    /*color: #00FFFF;*/
+
+}
+        .style2
+        {
+            height: 133px;
+        }
+       
+        .style3
+        {
+        	font-weight:normal;
+            width: 24%;
+        }
+       
+        .style4
+        {
+            color: #006600;
+        }
+       
+        .style5
+        {
+            height: 19px;
+        }
+        .style6
+        {
+            color: #006600;
+            height: 19px;
+        }
+       
+        .style7
+        {
+            height: 22px;
+        }
+       
+    </style>
+
+
+    <script type="text/javascript" src="Scripts/JScript.js"></script>
+    <script language="javascript" type="text/javascript">
+
+        function ClearForm() {
+            document.forms['form1'].reset();
+
+
+        }
+
+
+        function EncryptPwd() {
+
+
+            if (document.getElementById('txtpassword').value != "") {
+
+
+
+                document.getElementById('txtpassword').value = hex_md5(document.getElementById('HiddenField1').value + (hex_md5(document.getElementById('txtpassword').value)));
+
+                return true;
+            }
+            return true;
+        }
+
+
+
+
+
+
+        function isAlphaNumeric(val) {
+            if (val.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,15}$/)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function checkMail(str) {
+            var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+            if (filter.test(str)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function isNumeric(val) {
+            if (val.match(/^[0-9]+$/)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+    </script>
+
+
+<link href="../WebResourceceb6.css?d=e3Ljks2CO7_TO8ccdmiwKjG8ei8gXzkIohx7gqAkUz4qicuASIaG2-g-6O-LM14gX8WUN-Ol3JcH8wxRDl5DWhh-maIx2CK5SNS_T7d2dKNHUlSnROdQ1jrRxr1UsYE56b4H_5p1KIxDokMTUSbn32ZiMHyN9WqvYfKy_2Lpjxg1&amp;t=638126879051469852" type="text/css" rel="stylesheet" /></head>
+<body style="height: 49px">
+    <form method="post" action="http://agmarknet.gov.in/DailyDataEntry/Daily_data_Entry_Login.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTU3ODk0NzkzD2QWAgIDD2QWBAIDD2QWAmYPZBYCAgUPZBYCAg0PD2QWAh4Hb25DbGljawUWcmV0dXJuIHZhbGlkYXRlRm9ybSgpO2QCBQ9kFgYCAQ9kFgJmD2QWCAIDDxAPFgYeC18hRGF0YUJvdW5kZx4ORGF0YVZhbHVlRmllbGQFCnN0YXRlX2NvZGUeDURhdGFUZXh0RmllbGQFCnN0YXRlX25hbWVkEBUlES0tIFNlbGVjdCBzdGF0ZS0tE0FuZGFtYW4gYW5kIE5pY29iYXIOQW5kaHJhIFByYWRlc2gRQXJ1bmFjaGFsIFByYWRlc2gFQXNzYW0FQmloYXIKQ2hhbmRpZ2FyaAtDaGF0dGlzZ2FyaBZEYWRyYSBhbmQgTmFnYXIgSGF2ZWxpDURhbWFuIGFuZCBEaXUDR29hB0d1amFyYXQHSGFyeWFuYRBIaW1hY2hhbCBQcmFkZXNoEUphbW11IGFuZCBLYXNobWlyCUpoYXJraGFuZAlLYXJuYXRha2EGS2VyYWxhC0xha3NoYWR3ZWVwDk1hZGh5YSBQcmFkZXNoC01haGFyYXNodHJhB01hbmlwdXIJTWVnaGFsYXlhB01pem9yYW0ITmFnYWxhbmQMTkNUIG9mIERlbGhpBk9kaXNoYQtQb25kaWNoZXJyeQZQdW5qYWIJUmFqYXN0aGFuBlNpa2tpbQpUYW1pbCBOYWR1CVRlbGFuZ2FuYQdUcmlwdXJhDVV0dGFyIFByYWRlc2gKVXR0cmFraGFuZAtXZXN0IEJlbmdhbBUlES0tIFNlbGVjdCBzdGF0ZS0tAkFOAkFQAkFSAkFTAkJJAkNIAkNHAkROAkREAkdPAkdKAkhSAkhQAkpLAkpSAktLAktMAkxEAk1QAk1IAk1OAk1HAk1aAk5HAkRMAk9SAlBDAlBCAlJKAlNLAlROAlRMAlRSAlVQAlVDAldCFCsDJWdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAWZkAgcPEGRkFgBkAgsPEGRkFgBkAg8PD2QWAh4Jb25rZXlkb3duBRtyZXR1cm4gKGV2ZW50LmtleUNvZGUhPTEzKTtkAgUPD2QWAh8EBRtyZXR1cm4gKGV2ZW50LmtleUNvZGUhPTEzKTtkAgkPD2QWAh8ABRRyZXR1cm4gRW5jcnlwdFB3ZCgpO2Rkznx0M5mrqO6jeDZBy3nmJCdFjGiqm2s1y0am41LMEYU=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResource4c1c.js?d=EeGeXl9BukX_LxeFGMrs8PcpEzI8jMlvO5t7H6N3htMVJdcjs_3r3vPAhvKFLv5bamONaKtbD1rvA_7SGhOUS32Av674BQalnpjOokCtNhU1&amp;t=637811927229275428" type="text/javascript"></script>
+
+
+<script src="../ScriptResource19ce.js?d=E6rKSGFoL2I3jQ23_Jc1smahw-rwXGGcG6ioulcA_JA7hq-dXZF-uKMcxdxpXUvbsIRYjfuKfOWqOSIDS6Y1vIGl3QcLojbhDe--9l-sIQdcJpxBg-pPhzaqKN_loSIX_pSYfV7gXE3O54tYjelYQnglhp7TATRsxJAr1GcVnxY1&amp;t=2265eaa7" type="text/javascript"></script>
+<script src="../ScriptResource9dd0.js?d=S3sLwBNHBt5pipA2OGLuKZuywxMKuFy31sdQAO_EECWAob6DOxGxA4p-fZpRNsAU4hpfD002V61W-BEtjHZmyE_LdYYOJFNBTtymr3EzzLD3W4QtVc14IB2iLPHYmGXpikVXzjoCO93DEYnqzqpfucokEFoNbVDJNudYCqjohfqMo8YtaVnuC6OX4-PVIS_a0&amp;t=ffffffffaa493ab8" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../ScriptResource75f5.js?d=2J9IbkVLWsMBxGAmDpygqLaQBBR5voFLF8K9LXm9l_MezUhcr1F3RV6YZ4-fhoJW7kurlDvhaGcAno38uyh3CsEk0d0KkYOzj3dXjDhvxVNNawEnvgxXV3GEItXFcFbrsZ-PYod1_sgC13DxxFoQzAMdxxdAJU_n5sO0fQ049W70JPgeNnouVkMiyxO8YUZW0&amp;t=ffffffffaa493ab8" type="text/javascript"></script>
+<script src="../ScriptResource21aa.axd?d=VbqnHRlwTNMLnSzwUi_CdZK5CZXalEhGtFuNpluXHifq7ezjZ-mANsDNfobKQ-PmQuSwEUFEN4WN9q7u6BqFIyHQhUxQXDHVhgGuVkZXoCwTD5gGJFYOb1l-sMHCMBeEreuXR_YmrcDKVG6IIyuN9g2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResourcef246.axd?d=Q5SHPgUt37UHaBDqgA5bSk25_d-gudvMsPsRm2tEu0SAj_SFGErla-74_zvQUANUj6iGPzqpxzl_iWFd3bGEZS7SJFPn7ohODHZfnO4J33QbbkPUkXaYnHQ2T_OF5J0N0&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResourcef375.axd?d=Nt6QY0KK4MFBhd6GASw7wv42S09EpIy016AO-QCYkPCVilefuePmy7OXUwHVlNMCYRU3NOHeX06-kBrW4McXmZ7EYp3cQAJBaGvsokrNyOamOACbaU27kB6FK63BMiv-bIes6BRsWUYWXt4eG_lldw2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResourcefe69.axd?d=kHoZw8_umzJySUhnIU5cAD2FDRzE-QuxXa9xSKwYUeYHZkr-1I8ValxifscnzYbMKFft_EcdyN4DLLPq9ezkGK9Iv72XV1h0ZbjYqOrsMEYaFm3p4FRmXnW2UAI3gk54r4u18eqBIXyqk46FifYxVA2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResourcef78d.axd?d=utZo9MIA4o5duhsuOEPks2bj-WDuvVYzEPe4hWe9KVG2BErtvecxU-ENHRKiIpJqo-sPC7I3eYEJHIeNF6hP13LnLgLoFYzqyasuFG2-M5p-R4TlzdLGXosvC_w5XxYIIWrWLOjZBuqkkUltWf16nQ2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResource1b03.axd?d=zK2CFarQny5QzGamK6ky_M_fTF1UWRe0RcLkQ7j0VBIAkrczmVhm_LL8ooSyN_VtzGsj5Wy3WU16swRdNGB25ftoHskURxBg5nHUoF11KUKebw4W3D6PJgIz2kLFtepWOCZnEh8wT26mKxggL_KdwA2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResource2a6b.axd?d=PFc38inzK6TNVJhLxN6CdnnsOM2pPdmxTsvA12QDBDaqHQtUYgGXdHWiqVKBehTMJCcqoQv7OP4Em2d_JDa9fhXlnGUhOxNXQ8gnDIrH8V-DvDbrwSwCDI0b75FkXYmhcaCxbhMJ0wEEIKpDJCeQIQ2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResourcee95f.axd?d=UWk7mDODfCgDAN3QnpSCiJUp9IlnXfErxzBH-gx058IRNkeu38yC-elw5mSiLCDuCvXZpY5kOBank1nsFrUqrRXov1hRoHjZETydPpKzHb5-C5sD_miu_4FIf1IBTLFInEwHzQ9pHNgiTYNBXBAZmQ2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResource9260.axd?d=J2NTfZtdUTc9kRH0UBqbjcbkfdxTaRuuIqi6TH-gmSI0E8QlXkGTYdxA4MKFG9hOaezN5AEfzIDsE8Nxoi46_Q7tXjzrO-ZFzlmc5IyCufegmpc6GgXHpN8fTxQNewccAIQMi8-d0eDiEGjXRR2aqQ2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResourcea68a.axd?d=csfQ-Sxw4P09Ly3byWgALGsSaSWkhP9D6zMmciFrAO0WLGzv8gC_X8-iCTf8PnfDIplKEDzi01Rd5oNR54W8WtScPTdD3bPyptP_5FoUvYNevHNPD7Z3Pu7pS933TZ1BXZc6PdOPeyaTivv-QzYFMw2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResource2ad2.axd?d=-L22bhcucfE6KQh_-Hbj_O3ZNV_YUcKFXvp-1cxODq4pvgN-Ty2STqcV-F4bl_frWV6VPxzGWwSd6fKeJZSPu8zQPMD7hDxKreLTU54AT8Tr5KuK_zRJ4ykKTqA400cC0&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResource8134.axd?d=MsnN6Togis_RAYIDzzd74TTPObWmpqx3l4BLPXCodGHkgJW1JjdWeDVwzJv2ZbORvzTmo-44V8C637PQknB0Y7f4FMj3yBIsgUdE8_HfhrKhI-p3i8Ub9wyziq_IwusOBpleqMDCXQnUnDWuIePuEQ2&amp;t=27679117" type="text/javascript"></script>
+<script src="../ScriptResourcec1cb.axd?d=DK1A1-4Cx3LtAqk91EE-8rGTw7Uy1axF42eTBTqJysrB5NbNEltzbgTO6FqOEImy8aQuTpdlKTbT6VKSclsTDNVHWPRB2vWw--Y1Qg5SYhOqtkj2Ur6e3s6sNTBMFTjDXzjeNa5jJeP6w7z4Nyiktg2&amp;t=27679117" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B85DA1AA" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdADWUfjNHv2na5pQoH4gCAhbDeMRpQczsnjfMLvqwXCvtz8tk27HNeS8EAudtaZ2+39XCxAdlKC1qTQZyRV/fSvcHAjVmS6YdZAyFiajrTtzNU2IVDVdCEiDrlECNOSf45OQ6LNnMXevZUnvgwumOxT9+kA4LEojv5H/nMKOSVqBtTspUJqQLpxDYdjg++e1VWdhU2ioxbediQveP2nTrXhpyjHesn/tnyb5b+Qt0ixNWUYLLnfhEkzSDx7xfNOCC/0AhCyBtjlIPmoV9Zlf7Otn21L7R7S8tZ2a/8O3mCrCHRoRSgzzp2eHfkHFhtLlVF/epJCSdEIByBfYew66r+sye4g8D9CGsmh4d37d7IVDuYETMpPDiHW3/Ux8JIN3Xsb/eB5uQos/KxougXyWTrCHunJzOdUDddJNBL2O5S6q1a7IYI8o+TBjuU2qZe+817VDEIREzVsw95hhwuas61DGoNvjf6eDILjb+NV8F+wDCv0CvOlyy0V/N7CXXFJEQm5mpo2IKBh2X7yRgZ5iECu0ih79b/PO1XPDS9DpQwSQ/SXitS7AUny1fLrTwXRX2wqaDnFyNek3pRDsitp753u55ZOmkpTe9RolCl/byWnQUQ9ZEY+5IB9ShwYNR8PmhLh3eKNhC0CiGL7p5h6VjulK3O6/nvtj9/gn/pRCxNyUZTPihoqJQooWTjNIjUFQBqv17eevqycT7rOrFCjKfmSCUnf/53XIjYoxlICvdnyYRPKGihuiwJfeDjcAFd5WV+Pr1FLqSx1Eo5CC28UrQYmncHZZPH31T4g5H+RXlliJSxr/k73K/ZqDP0GJcRX64AJ4rVw8ZJm4Pjg9eddRODspQsdWIRtSzy05Ce/S1aK2gobHQx68fz6nal6RAusNLzDJguDHVE5QX8oVOf8mhskAf0I0E43XvuMfHJSlMebyMxXOBnHQSQQ91D5Xk0hNdJG6/BxBU+yn4Jl9Ix8+orwDKnGlZyQjep2Z8QlUK7Z/lwbtA38DHnk6UkZtJ4jM9HhHRUwxKDZ+KWr7YKeKK8ecHmX+TFKdoKJU/yfSArg3MI3d/cDBIq6BooBrepfvNF+oUZoM7Vq1RWXxo/KFmLMOxYhM0SpqGl6sQ9WQzHF7zLmYRzrORxqUbXH1xasp+3S149l4ZoPPJna16arjPHjvr" />
+</div>
+
+    <div id="popup_box">	<!-- OUR PopupBox DIV-->
+	<h2 style="color:red; font-variant:small-caps; border-bottom:1px solid Red ; padding-bottom:7px;
+	margin-bottom:7px; text-align:center"> Most Important - As per DMI instructions </h2> 
+        <div style="overflow:auto; height:480px;"><br /><br />
+    
+            <a style="color:Navy; font-weight:bold; font-size:16px">  1- Now last three days data can only be updated from today through "Daily Market Arrivals and Prices Data Entry" option.  </a></br></br>
+            <a style="color:Navy; font-weight:bold; font-size:16px">  2- Previous month anomalous data cannot be modified after 10th day of current month by the user.   </a></br></br>
+
+
+     <a style="color:green; font-weight:bold; font-size:16px">  NOTE: The commodity Paddy(Dhan) has been divided into 2 commodities namely Paddy(Dhan)(Common) & Paddy(Dhan)(Basmati). Therefore, it is requeted to select the mentioned commodity & thier varieties accordingly through &quot;Local Preferences&quot; option for feeding the daily data entry.   </a></br></br>
+
+     <a style="color:green; font-weight:bold; font-size:16px"> 'Other' variety of Paddy(Dhan)(Basmati) has been removed, For addition of any new variety in Commodity Paddy(Dhan)(Basmati), User may write to mrin-dmi@nic.in   </a></br></br>
+
+     <a style="color:red; font-weight:bold; font-size:16px">  USERS ARE REQUESTED TO RESELECT THE COMMODITIES Paddy(Dhan)(Common) & Paddy(Dhan)(Basmati) THROUGH "LOCAL PREFERENCES" OPTION FOR FEEDING DAILY DATA ENTRY OF THEIR APMCS </a></br></br>
+
+     <a style="color:green; font-weight:bold; font-size:16px"> For any clarification, please write to mrin-dmi@nic.in   </a><br /><br />
+
+</div>
+
+ <a id="popupBoxClose">Close Message</a>	
+</div>
+    <div class="page">
+
+    <table cellpadding="1" cellspacing="1" align="center" width="100%">
+        <tr>
+            <td width="100%">
+            <table cellspacing="0" width="90%" align="center" border="0">
+                    <tr>
+                        <td colspan="3">
+                <table cellspacing="0" width="100%" align="center" >
+                    <tr>
+                        <td colspan="3">
+                            
+                            <div class="header">
+          
+            <div style="margin-top: 0px;" class="loginDisplay" >
+               <h4 align="center" 
+                    
+                    style="color: #FFFFFF; font-size:x- large; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                    &nbsp;Agricultural Marketing Information System&nbsp;(AGMARKNET)<br/>
+                
+                    &nbsp;<a style="font-size:medium">A Step to Globlize Indian Agriculture</a>
+
+                </h4>
+                <div align="center">
+                <h5 style="color:White">A project of Directorate of Marketing And Inspection, Department of Agriculture Cooperation & Farmers Welfare<br />Ministry of Agriculture & Farmers Welfare, Government of India </h5>
+                </div>
+                
+          
+           </div>
+           
+        </div>
+                            </td>
+                    </tr>
+                   
+                  
+                   
+                   
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td align="center" 
+                           width="60%">
+                            <table cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="color: #000066; font-size: xx-large; font-family: Andalus; font-weight: bold;">
+                                        Login</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                      
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="20%">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style2">
+                            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('sc1', 'form1', ['tup1','up1','tpnl1update','pnl1update'], [], [], 90, '');
+//]]>
+</script>
+
+                        
+                        <div id="up1">
+	
+
+<input type="submit" name="btnShowPopup" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnShowPopup&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnShowPopup" style="display:none" />
+
+
+
+
+
+<div id="pnlmarket_alert" class="modalTextBox" style="width:400px;display: none;">
+		
+				
+			
+				<div>
+					
+    <table width="85%" align="center">
+    <tr><td colspan="2">Provide Contact Details</td></tr>
+   <tr><td>Mobile No:</td><td><input name="txtmob" type="text" maxlength="10" id="txtmob" style="width:110px;" /></td><td> <span id="RegularExpressionValidator4" style="display:none;">Invalid Mobile</span></td></tr>
+   <tr><td>Email Id:</td><td><input name="txtemail" type="text" id="txtemail" style="width:110px;" /></td><td><span id="RegularExpressionValidator6" style="display:none;">Invalid E-mail</span></td></tr>
+   <tr><td>Telephone No:</td><td><input name="txttelephone" type="text" maxlength="15" id="txttelephone" style="width:110px;" /></td><td><span id="RegularExpressionValidator5" style="display:none;">Invalid Telephone</span></td></tr>
+   <tr><td></td><td></td></tr>
+  
+       
+       </table>
+
+               
+
+				</div>
+				<div class="clearer">
+			</div>
+				<div style="white-space: nowrap; text-align: center;">
+					   <input type="submit" name="btnsave" value="Save" onclick="return validateForm();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnsave&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnsave" style="width:100px;" />
+                        
+		    
+				</div>
+			
+	</div>
+
+
+
+              
+</div>
+                            </td>
+                        <td width="60%" align="center" class="style2">
+                        
+
+                      
+ 
+                        <div id="Panel1" style="background-color:#ADBD7A;height:262px;width:350px;text-align:center;margin-bottom: 0px">
+	
+                       
+           
+                            <table align="center" cellspacing="2" border="0" style="width: 350px; height: 250px;" >
+
+                            <tr><td align="center"><div id="pnl1update">
+		
+                            <table align="center" cellspacing="2" border="0" style="width: 350px;">
+
+                            <tr><td colspan="2"> </td></tr>
+                                <tr>
+                                    <td align="right" class="style3">
+                                         State:</td>
+                                    <td align="left">
+                                    <select name="ddlstate" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlstate\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlstate" class="unwatermarked" style="font-family:Times New Roman;font-size:Small;font-weight:bold;height:21px;width:63%;font-weight:normal">
+			<option selected="selected" value="-- Select state--">-- Select state--</option>
+			<option value="AN">Andaman and Nicobar</option>
+			<option value="AP">Andhra Pradesh</option>
+			<option value="AR">Arunachal Pradesh</option>
+			<option value="AS">Assam</option>
+			<option value="BI">Bihar</option>
+			<option value="CH">Chandigarh</option>
+			<option value="CG">Chattisgarh</option>
+			<option value="DN">Dadra and Nagar Haveli</option>
+			<option value="DD">Daman and Diu</option>
+			<option value="GO">Goa</option>
+			<option value="GJ">Gujarat</option>
+			<option value="HR">Haryana</option>
+			<option value="HP">Himachal Pradesh</option>
+			<option value="JK">Jammu and Kashmir</option>
+			<option value="JR">Jharkhand</option>
+			<option value="KK">Karnataka</option>
+			<option value="KL">Kerala</option>
+			<option value="LD">Lakshadweep</option>
+			<option value="MP">Madhya Pradesh</option>
+			<option value="MH">Maharashtra</option>
+			<option value="MN">Manipur</option>
+			<option value="MG">Meghalaya</option>
+			<option value="MZ">Mizoram</option>
+			<option value="NG">Nagaland</option>
+			<option value="DL">NCT of Delhi</option>
+			<option value="OR">Odisha</option>
+			<option value="PC">Pondicherry</option>
+			<option value="PB">Punjab</option>
+			<option value="RJ">Rajasthan</option>
+			<option value="SK">Sikkim</option>
+			<option value="TN">Tamil Nadu</option>
+			<option value="TL">Telangana</option>
+			<option value="TR">Tripura</option>
+			<option value="UP">Uttar Pradesh</option>
+			<option value="UC">Uttrakhand</option>
+			<option value="WB">West Bengal</option>
+
+		</select>
+                                    <span id="RegularExpressionValidator1" style="display:none;">Invalid State</span>
+                                                                                          
+                                    </td>
+                                </tr>
+
+                                  <tr>
+                                    <td align="right" class="style3">
+                                        District:</td>
+                                    <td align="left" >
+                                    <select name="ddldistrict" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddldistrict\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddldistrict" tabindex="1" class="unwatermarked" style="font-family:Times New Roman;font-size:Small;font-weight:bold;height:21px;width:63%;font-weight:normal">
+
+		</select>
+                                    <span id="RegularExpressionValidator2" style="display:none;">Invalid District</span>
+                                                                                          
+                                    </td>
+                                </tr>
+
+                                  <tr>
+                                    <td align="right" class="style3">
+                                         Market:</td>
+                                    <td align="left" >
+                                    <select name="ddlmarket" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlmarket\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlmarket" tabindex="2" class="unwatermarked" style="font-family:Times New Roman;font-size:Small;font-weight:bold;height:21px;width:63%;font-weight:normal">
+
+		</select>
+                                    <span id="RegularExpressionValidator3" style="display:none;">Invalid Market</span>
+                                                                                          
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right" class="style3">
+                                        Password:</td>
+                                    <td align="left" >
+                                    <input name="txtpassword" type="password" maxlength="50" id="txtpassword" tabindex="3" class="unwatermarked" onkeydown="return (event.keyCode!=13);" style="border-color:#CCCCCC;width:63%;" />
+                                   
+                                      <input name="hidStateCode" type="hidden" id="hidStateCode" />
+      
+        <input name="hidMarketCenterCode" type="hidden" id="hidMarketCenterCode" />
+                                    </td>
+                                </tr> </table>  
+	</div></td></tr>
+
+                                <tr><td align="left" valign="top" style="margin-top:0px;">  <table style="margin-top:0px"><tr><td align="left" valign="top" style="margin-top:0px;">
+                        <div class="logCaptchaImg" style="margin-top:0px">
+                            <img id="Image2" src="captcha.gif" /></div></td>
+                            <td align="right" style="margin-top:0px">
+                                    <input name="txtCaptcha" type="text" id="txtCaptcha" tabindex="4" onkeydown="return (event.keyCode!=13);" />
+                                   
+                                    <span id="lblmsg" style="color:Red;font-weight:bold;"></span>
+                                    </td></tr></table></td>
+                         </tr>
+
+                                
+
+                                <tr>
+                                   
+                                         <td align="center"  >
+                                  
+                                        <input type="submit" name="btnlogin" value="Login" onclick="return EncryptPwd();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnlogin&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnlogin" tabindex="5" style="font-weight:bold;width:25%;" />
+                                    </td>
+                                </tr>
+
+                                 
+                                 
+                            </table>
+                        
+                              
+                            
+</div> 
+
+
+
+
+
+                        </td>
+                        <td width="20%" class="style2">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                       
+                        <td width="20%">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td width="60%" align="center">
+                            <span id="Label1" style="color:Red;font-size:Medium;font-weight:bold;"></span>
+                            <span id="Label3" style="color:Red;font-size:Medium;font-weight:bold;"></span>
+                        </td>
+                        <td width="20%">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style7">
+                            </td>
+                        <td align="center" width="60%" class="style7">
+                           <br /><br />
+                           
+                        </td>
+                        <td width="20%" class="style7">
+                            </td>
+                    </tr>
+
+
+ <tr>
+
+<td class="style5">
+                                </td>
+                                   
+<td width="20%" class="style5"> </td>
+                                     
+                                </tr>
+                                <tr>
+<td class="style5">
+                                </td>
+                                   
+<td width="20%" class="style5"></td>
+                                
+                                </tr>
+                            <tr>
+                        <td class="style5">
+                                </td>
+                        <td width="60%" class="style6" style="text-align: center"><br />
+                            <a href="UserManual.pdf" target="_blank" ><span class="style4">User Help File</span></a></td>
+                        <td width="20%" class="style5">
+                                </td>
+                    </tr>
+                 
+                 
+                    <tr>
+                        <td class="style5">
+                            </td>
+                        <td width="60%" class="style5">
+                            </td>
+                        <td width="20%" class="style5">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td width="60%">
+                            &nbsp;</td>
+                        <td width="20%">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td width="60%">
+                            &nbsp;</td>
+                        <td width="20%">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td width="60%">
+                            &nbsp;</td>
+                        <td width="20%">
+                            &nbsp;</td>
+                    </tr>
+                   
+                  
+                    <tr>
+                        <td colspan="3">
+                        <div class="footer">
+                        <table cellpadding="0" cellspacing="0" 
+                style="color: #FFFFFF; font-weight: normal; font-size: small;" width="100%">
+                <tr>
+                    <td align="center" width="100%" >
+                         Executing Agency:<br />National Informatics Center, Ministry of Electronics and<br/>Information Technology, Government of India</td>
+                    
+                </tr>
+            </table>
+            </div>
+                          </td>
+                    </tr>
+                </table>
+                </td>
+              </tr>
+
+    </table>
+        </td>
+        </tr>
+    </table>
+   <input name="csrfval" type="hidden" id="csrfval" value="36162458368441405994242008502620" />
+    <input name="HiddenField1" type="hidden" id="HiddenField1" value="3616245836844140" />
+    
+    
+
+    </div>
+
+
+    
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("RegularExpressionValidator4"), document.getElementById("RegularExpressionValidator6"), document.getElementById("RegularExpressionValidator5"), document.getElementById("RegularExpressionValidator1"), document.getElementById("RegularExpressionValidator2"), document.getElementById("RegularExpressionValidator3"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var RegularExpressionValidator4 = document.all ? document.all["RegularExpressionValidator4"] : document.getElementById("RegularExpressionValidator4");
+RegularExpressionValidator4.controltovalidate = "txtmob";
+RegularExpressionValidator4.errormessage = "Invalid Mobile";
+RegularExpressionValidator4.display = "Dynamic";
+RegularExpressionValidator4.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator4.validationexpression = "([0-9])*";
+var RegularExpressionValidator6 = document.all ? document.all["RegularExpressionValidator6"] : document.getElementById("RegularExpressionValidator6");
+RegularExpressionValidator6.controltovalidate = "txtemail";
+RegularExpressionValidator6.errormessage = "Invalid E-mail";
+RegularExpressionValidator6.display = "Dynamic";
+RegularExpressionValidator6.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator6.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var RegularExpressionValidator5 = document.all ? document.all["RegularExpressionValidator5"] : document.getElementById("RegularExpressionValidator5");
+RegularExpressionValidator5.controltovalidate = "txttelephone";
+RegularExpressionValidator5.errormessage = "Invalid Telephone";
+RegularExpressionValidator5.display = "Dynamic";
+RegularExpressionValidator5.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator5.validationexpression = "([0-9])*";
+var RegularExpressionValidator1 = document.all ? document.all["RegularExpressionValidator1"] : document.getElementById("RegularExpressionValidator1");
+RegularExpressionValidator1.controltovalidate = "ddlstate";
+RegularExpressionValidator1.errormessage = "Invalid State";
+RegularExpressionValidator1.display = "Dynamic";
+RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator1.validationexpression = "([A-Z])*";
+var RegularExpressionValidator2 = document.all ? document.all["RegularExpressionValidator2"] : document.getElementById("RegularExpressionValidator2");
+RegularExpressionValidator2.controltovalidate = "ddldistrict";
+RegularExpressionValidator2.errormessage = "Invalid District";
+RegularExpressionValidator2.display = "Dynamic";
+RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator2.validationexpression = "([0-9])*";
+var RegularExpressionValidator3 = document.all ? document.all["RegularExpressionValidator3"] : document.getElementById("RegularExpressionValidator3");
+RegularExpressionValidator3.controltovalidate = "ddlmarket";
+RegularExpressionValidator3.errormessage = "Invalid Market";
+RegularExpressionValidator3.display = "Dynamic";
+RegularExpressionValidator3.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator3.validationexpression = "([0-9])*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"dynamicServicePath":"/DailyDataEntry/Daily_data_Entry_Login.aspx","id":"market_alert","popupControlID":"pnlmarket_alert"}, null, null, $get("btnShowPopup"));
+});
+
+document.getElementById('RegularExpressionValidator4').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidator4'));
+}
+
+document.getElementById('RegularExpressionValidator6').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidator6'));
+}
+
+document.getElementById('RegularExpressionValidator5').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidator5'));
+}
+
+document.getElementById('RegularExpressionValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidator1'));
+}
+
+document.getElementById('RegularExpressionValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidator2'));
+}
+
+document.getElementById('RegularExpressionValidator3').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidator3'));
+}
+//]]>
+</script>
+</form>
+</body>
+
+
+<!-- Mirrored from agmarknet.gov.in/DailyDataEntry/Daily_data_Entry_Login.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Mar 2023 14:53:05 GMT -->
+</html>

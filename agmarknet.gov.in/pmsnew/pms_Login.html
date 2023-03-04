@@ -1,0 +1,266 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	
+<!-- Mirrored from agmarknet.gov.in/pmsnew/pms_Login.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Mar 2023 15:14:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<HEAD>
+		<title>pms_login</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+        <script src="Scripts/JScript.js" type="text/javascript"></script>
+         <script type="text/javascript" src="Scripts/SHA256.js"> </script>
+        <script src="Scripts/md5.js" type="text/javascript"></script>
+
+        <script language="javascript" type="text/javascript">
+            window.onbeforeunload = function () {
+                // This function does nothing.  It won't spawn a confirmation dialog   
+                // But it will ensure that the page is not cached by the browser.
+            }  
+    </script>
+    <script type="text/javascript" src="../../code.jquery.com/jquery-latest.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(btnClick).click(function () {
+                alert("Contact Admin !");
+            });
+        });
+</script>
+
+
+        <script language="javascript" type="text/javascript">
+            function DisableBackButton() {
+                window.history.forward()
+            }
+            DisableBackButton();
+            window.onload = DisableBackButton;
+            window.onpageshow = function (evt) {
+                if (evt.persisted) DisableBackButton()
+            }
+            window.onunload = function () { void (0) }
+
+        function ClearForm() {
+           document.forms['form1'].reset();
+//            document.getElementById('Form1').reset();
+//            for (i = 0; i < Page_Validators.length; i++) {  
+
+//              Page_Validators[i].style.visibility = 'hidden';    }  
+//   
+
+//              return false;  
+
+
+        }
+
+        function EncryptPwd() {
+            if (document.getElementById('Pass_Textbox').value != "" && document.getElementById('txtUsername').value != "" && document.getElementById('txtCaptcha').value != "") {
+
+                var prandm = document.getElementById('HiddenField1').value + Sha256(document.getElementById('Pass_Textbox').value);
+                document.getElementById('Pass_Textbox').value = Sha256(prandm);
+
+                document.getElementById('HiddenField1').value = '';
+                return true;
+            }
+            else {
+                document.getElementById('HiddenField1').value = '';
+                alert('Please Enter Username/Password/Captcha Image');
+
+                return false;
+            }
+            return true;
+        }
+
+        function ClearFields() {
+            document.getElementById('Pass_Textbox').value = '';
+            document.getElementById('HiddenField1').value = '';
+            document.getElementById('txtUsername').value = '';
+            document.getElementById('HiddenField1').value = '';
+            alert('Please Contact Administrator !');
+            return false;
+        }
+
+//        function EncryptPwd() {
+
+
+//            if (document.getElementById('Pass_Textbox').value != "") {
+
+//                var hdn = document.getElementById('HiddenField1').value;
+//                alert(hdn);
+
+//                var d = document.getElementById('Pass_Textbox').value;
+//               
+//                alert(d);
+
+//               var p= document.getElementById('Pass_Textbox').value = hex_md5(document.getElementById('HiddenField1').value + (hex_md5(document.getElementById('Pass_Textbox').value)));
+
+//                alert(p);
+
+//                return true;
+//            }
+//            return true;
+//        }
+
+
+        </script>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout">
+		<form method="post" action="http://agmarknet.gov.in/pmsnew/pms_Login.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="Form1" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTUyMjM3NzA5D2QWAmYPZBYIAg0PD2QWAh4Jb25rZXlkb3duBRtyZXR1cm4gKGV2ZW50LmtleUNvZGUhPTEzKTtkAhUPD2QWAh8ABRtyZXR1cm4gKGV2ZW50LmtleUNvZGUhPTEzKTtkAhgPD2QWAh4Hb25DbGljawUUcmV0dXJuIEVuY3J5cHRQd2QoKTtkAhwPDxYCHgRUZXh0BSBCMTM4NTQwRDY1OTlDMkEzNkQ3NjAyQTlCNzQ2MUEwQWRkZCjDoifK6Co5CIJlT0skHXAQpaeQvIoKsnYbV1CMZCTO" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResource4c1c.js?d=EeGeXl9BukX_LxeFGMrs8PcpEzI8jMlvO5t7H6N3htMVJdcjs_3r3vPAhvKFLv5bamONaKtbD1rvA_7SGhOUS32Av674BQalnpjOokCtNhU1&amp;t=637811927229275428" type="text/javascript"></script>
+
+
+<script src="../WebResource2e07.js?d=xPDvy-vaHEfEgjQPlvQBbUlBTgqmmQLMXXDpHBbPB_u60K5PSoe0QcsOYh0TeW-rPN2PbbSOqrCRfPRgNmKA32WUReG3y4tw4V9ba3IhLRk1&amp;t=637811927229275428" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C4FCA087" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAc6a1TDksMPSyr2ZmFgChBiVK7BrRAtEiqu9nGFEI+jB9ksiNOnoRqnXOY7X46SYUCZf5MUp2golT/J9ICuDcwj/ewO7buBgG0KTxuowUNuBDUCk4wZjtX1Vu9zl6aCLPBiEzRKmoaXqxD1ZDMcXvMuHyUnYq7ECeqtMrvTNcWvNyFzhIbnE/NxTZ1pEr1dRnY=" />
+</div>
+			<span id="Label6" style="display:inline-block;color:#266606;font-family:Times New Roman;font-size:Medium;text-decoration:underline;height:31px;width:360px;Z-INDEX: 108; LEFT: 304px; POSITION: absolute; TOP: 24px">AGMARKNET Performance Monitoring System</span>
+			<TABLE id="Table1" style="Z-INDEX: 107; LEFT: 336px; WIDTH: 272px; POSITION: absolute; TOP: 160px; HEIGHT: 48px"
+				borderColor="#266606" cellSpacing="1" cellPadding="1" border="1">
+				<TR>
+					<TD style="WIDTH: 635px" align="center"><span id="Label2" style="display:inline-block;color:#266606;font-family:Times New Roman;font-size:Small;font-weight:bold;height:24px;width:64px;">Username:</span></TD>
+					<TD style="WIDTH: 498px" align="center"><input name="txtUsername" type="text" maxlength="20" id="txtUsername" style="width:148px;" />
+                      <span id="rgvUsername" style="color:Red;display:none;">Invalid UserName</span>
+                                                    
+                    <span id="rqrUsername" style="color:Red;display:none;">Enter UserName</span>
+                                                    
+                                                    </TD>
+				</TR>
+			</TABLE>
+			<TABLE id="Table2" style="Z-INDEX: 101; LEFT: 336px; WIDTH: 272px; POSITION: absolute; TOP: 205px; HEIGHT: 48px"
+				borderColor="#266606" cellSpacing="1" cellPadding="1" border="1">
+				<TR>
+					<TD style="WIDTH: 642px" align="center"><span id="Label3" style="display:inline-block;color:#266606;font-family:Times New Roman;font-size:Small;font-weight:bold;height:24px;width:64px;">Password:</span></TD>
+					<TD style="WIDTH: 498px" align="center"><input name="Pass_Textbox" type="password" id="Pass_Textbox" tabindex="1" onkeydown="return (event.keyCode!=13);" style="height:22px;width:149px;" />
+                      <span id="Regtxtarrivala_grid" style="visibility:hidden;">Invalid Password</span>
+                    </TD>
+				</TR>
+			</TABLE>
+            <TABLE id="Table4" style="Z-INDEX: 101; LEFT: 336px; WIDTH: 272px; POSITION: absolute; TOP: 250px; HEIGHT: 48px"
+				borderColor="#266606" cellSpacing="1" cellPadding="1" border="1">
+				
+                <TR>
+					<TD style="WIDTH: 642px" align="center"><span id="Label7" style="display:inline-block;color:#266606;font-family:Times New Roman;font-size:Small;font-weight:bold;height:24px;width:64px;">Captcha:</span></TD>
+					<TD style="WIDTH: 498px" align="center">
+                            <img id="Image2" src="captcha.gif" /></TD>
+				</TR>
+
+			</TABLE>
+              <TABLE id="Table5" style="Z-INDEX: 101; LEFT: 336px; WIDTH: 272px; POSITION: absolute; TOP: 295px; HEIGHT: 48px"
+				borderColor="#266606" cellSpacing="1" cellPadding="1" border="1">
+				<TR>
+					
+					<TD style="WIDTH: 498px" align="center"><input name="txtCaptcha" type="text" id="txtCaptcha" tabindex="1" onkeydown="return (event.keyCode!=13);" style="height:22px;width:149px;" /><span id="RegularExpressionValidator1" style="visibility:hidden;">Invalid Captcha</span></TD>
+				</TR>
+			</TABLE>
+			<TABLE id="Table3" style="Z-INDEX: 102; LEFT: 336px; WIDTH: 272px; POSITION: absolute; TOP: 340px; HEIGHT: 48px"
+				borderColor="#266606" cellSpacing="1" cellPadding="1" border="1">
+				<TR>
+					<TD style="WIDTH: 143px" align="center"><input type="submit" name="Button_Ok" value="Ok" onclick="return EncryptPwd();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Button_Ok&quot;, &quot;&quot;, true, &quot;Login&quot;, &quot;&quot;, false, false))" id="Button_Ok" tabindex="2" style="color:White;background-color:#266606;font-family:Times New Roman;font-size:X-Small;height:24px;width:81px;" /></TD>
+					<TD style="WIDTH: 498px" align="center">
+                    <input type="submit" name="But_reset" value="Forgot Password" onclick="ClearFields();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;But_reset&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="But_reset" tabindex="3" style="color:White;background-color:#266606;font-family:Times New Roman;font-size:X-Small;height:24px;width:81px;" />
+                            
+                            </TD>
+				</TR>
+			</TABLE>
+             
+              
+               <input type="hidden" name="HiddenField1" id="HiddenField1" value="B138540D6599C2A3" />
+			<span id="Label1" style="display:inline-block;color:White;background-color:#266606;font-family:Times New Roman;font-size:Medium;font-weight:bold;height:24px;width:344px;Z-INDEX: 103; LEFT: 296px; POSITION: absolute; TOP: 104px">Please Enter Username and Password </span><span id="Label4" style="display:inline-block;background-color:#026606;height:24px;width:304px;Z-INDEX: 104; LEFT: -8px; POSITION: absolute; TOP: 104px"></span><span id="Label5" style="display:inline-block;background-color:#026606;height:24px;width:366px;Z-INDEX: 105; LEFT: 640px; POSITION: absolute; TOP: 104px"></span>
+			
+                 
+                  
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("rgvUsername"), document.getElementById("rqrUsername"), document.getElementById("Regtxtarrivala_grid"), document.getElementById("RegularExpressionValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var rgvUsername = document.all ? document.all["rgvUsername"] : document.getElementById("rgvUsername");
+rgvUsername.controltovalidate = "txtUsername";
+rgvUsername.errormessage = "Invalid UserName";
+rgvUsername.display = "Dynamic";
+rgvUsername.validationGroup = "Login";
+rgvUsername.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+rgvUsername.validationexpression = "([a-z]|[A-Z]|[-]|[ ]|[_])*";
+var rqrUsername = document.all ? document.all["rqrUsername"] : document.getElementById("rqrUsername");
+rqrUsername.controltovalidate = "txtUsername";
+rqrUsername.errormessage = "Enter UserName";
+rqrUsername.display = "Dynamic";
+rqrUsername.validationGroup = "Login";
+rqrUsername.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rqrUsername.initialvalue = "";
+var Regtxtarrivala_grid = document.all ? document.all["Regtxtarrivala_grid"] : document.getElementById("Regtxtarrivala_grid");
+Regtxtarrivala_grid.controltovalidate = "Pass_Textbox";
+Regtxtarrivala_grid.errormessage = "Invalid Password";
+Regtxtarrivala_grid.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+Regtxtarrivala_grid.validationexpression = "([0-9]|[a-z]|[A-Z]|[.@#$*&^%])*";
+var RegularExpressionValidator1 = document.all ? document.all["RegularExpressionValidator1"] : document.getElementById("RegularExpressionValidator1");
+RegularExpressionValidator1.controltovalidate = "txtCaptcha";
+RegularExpressionValidator1.errormessage = "Invalid Captcha";
+RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator1.validationexpression = "([0-9]|[a-z]|[A-Z]|[.])*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+	</body>
+
+<!-- Mirrored from agmarknet.gov.in/pmsnew/pms_Login.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Mar 2023 15:14:19 GMT -->
+</HTML>
